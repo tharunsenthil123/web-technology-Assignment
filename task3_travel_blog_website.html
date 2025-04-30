@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Adventures - Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    .post-title { font-size: 1.8rem; color: #2c3e50; }
+    .post-summary { font-size: 1rem; color: #7f8c8d; }
+    .btn:hover { opacity: 0.85; }
+    .card-img-top { height: 200px; object-fit: cover; }
+    .carousel-inner img { height: 400px; object-fit: cover; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="#">Travel Adventures</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+      <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <!-- Carousel -->
+  <div id="travelCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="destination1.jpg" class="d-block w-100" alt="Destination 1"></div>
+      <div class="carousel-item"><img src="destination2.jpg" class="d-block w-100" alt="Destination 2"></div>
+      <div class="carousel-item"><img src="destination3.jpg" class="d-block w-100" alt="Destination 3"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Destinations Section -->
+  <h2 id="destinations">Must-Visit Destinations</h2>
+  <ul>
+    <li><b>Bali, Indonesia:</b> Stunning beaches and vibrant culture.</li>
+    <li><b>Paris, France:</b> Experience art, history, and the Eiffel Tower.</li>
+    <li><b>Kyoto, Japan:</b> Visit the iconic temples and beautiful gardens.</li>
+  </ul>
+
+  <!-- Blog Section -->
+  <h2 id="blog">Travel Blog Posts</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="paris.jpg" class="card-img-top" alt="Paris">
+        <div class="card-body">
+          <h5 class="post-title">Exploring Paris</h5>
+          <p class="post-summary">Paris is always a good idea! Here's a guide to the best spots in the City of Lights...</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="bali.jpg" class="card-img-top" alt="Bali">
+        <div class="card-body">
+          <h5 class="post-title">Bali Adventure</h5>
+          <p class="post-summary">From beaches to temples, Bali offers a perfect blend of nature and culture...</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="kyoto.jpg" class="card-img-top" alt="Kyoto">
+        <div class="card-body">
+          <h5 class="post-title">Kyoto: A Journey Through Time</h5>
+          <p class="post-summary">Discover the peaceful temples and gardens of Kyoto. A perfect destination for culture lovers...</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packing Tips -->
+  <h4>Essential Packing Tips</h4>
+  <ul>
+    <li>Pack light: Choose versatile clothing.</li>
+    <li>Don’t forget your power adapter.</li>
+    <li>Bring a portable charger for your devices.</li>
+  </ul>
+
+  <!-- Travel Packages Comparison -->
+  <h4>Travel Packages</h4>
+  <table class="table table-bordered">
+    <tr><th>Package</th><th>Duration</th><th>Price</th><th>Details</th></tr>
+    <tr><td>Paris Tour</td><td>5 Days</td><td>$1200</td><td>Includes flights, hotel, and sightseeing tours.</td></tr>
+    <tr><td>Bali Getaway</td><td>7 Days</td><td>$1500</td><td>Includes resorts, spa, and beach activities.</td></tr>
+    <tr><td>Kyoto Cultural Tour</td><td>6 Days</td><td>$1300</td><td>Explore temples, gardens, and traditional tea ceremonies.</td></tr>
+  </table>
+
+  <!-- Video Section -->
+  <h4>Travel Guide Video</h4>
+  <video width="100%" controls poster="guide.jpg">
+    <source src="travel-guide.mp4" type="video/mp4">
+  </video>
+
+  <!-- Subscription Section -->
+  <h2 id="subscribe" class="mt-4">Subscribe to Our Newsletter</h2>
+  <form>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Enter your email" required>
+    </div>
+    <button type="submit" class="btn btn-success">Subscribe</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
